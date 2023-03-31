@@ -1,0 +1,22 @@
+<resources>
+   <string name="app_name">BMI Calculator</string>
+   <string name="enter_weight">Enter Weight</string>
+   <string name="enter_height">Enter Height</string>
+   <string name="bmi">BMI</string>
+
+   <string name="recipes">
+1. Nagrzewamy piekarnik do 200 ° C (góra i dół).\n
+2. Utrzepujemy mikserem jaja z cukrem do momentu aż do białej, puszystej masy.\n
+3. Przesiewamy mąkę z proszkiem do pieczenia i solą. Dodajemy powoli masę z jajek cały czas mieszając.\n
+4. Dodajemy olej lub masło (roztopione i ostudzone) i mieszamy wszystko bardzo dokładnie.\n
+5. Wkładamy papierowe foremki do foremek do magdalenek lub muffinek.\n
+6. Uzupełniamy masą foremki do około 3/4 pojemności.\n
+7. Na wierzch posypujemy cukru, aby po pieczeniu stworzyła się chrupiąca skorupka.\n
+8. Wkładamy magdalenki do pieca na około 15 minut. Nie otwieramy w trakcie pieczenia.\n
+9. Gdy magdalenki będą już gotowe, wyciągamy do ostygnięcia.\n
+10. Smacznego! 🙂
+   </string>
+   <string name="enter_age">Enter your age </string>
+   <string name="Energy_Burn">Energy Burn</string>
+   <string name="recipe_title">Hiszpańskie Magdalenki</string>
+</resources>
