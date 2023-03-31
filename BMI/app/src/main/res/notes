@@ -1,0 +1,8 @@
+# Ćwiczenia 02 2023.03.19
+Termin realizacji: 01.04.2023
+Rozszerz poprzednią aplikację. Dodaj funkcjonalności:
+- Ekran startowy (zawiera obrazek);
+- Oblicz BMI;
+- Ile mogę zjeść kalorii (wzor Benedicta-Harrisa);
+- Co mogę jeść? Daj rekomendację przepisu kulinarnego. Aplikcaja zwiera przynajmniej 2 przepisy.
+Kod wrzuć do poprzedniego repozytorium. Dodaj print screen z zrzutem działającej aplikcji.

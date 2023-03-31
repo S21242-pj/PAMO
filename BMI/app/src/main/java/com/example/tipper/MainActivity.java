@@ -2,15 +2,15 @@ package com.example.tipper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable; // for EditText event handling
 import android.text.TextWatcher; // EditText listener
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText; // for bill amount input
-import android.widget.SeekBar; // for changing the tip percentage
-import android.widget.SeekBar.OnSeekBarChangeListener; // SeekBar listener
 import android.widget.TextView; // for displaying text
 
-import java.text.NumberFormat; // for currency formatting
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +34,26 @@ public class MainActivity extends AppCompatActivity {
         heightTextView = (TextView) findViewById(R.id.heightTextView);
         totalTextView = (TextView) findViewById(R.id.totalTextView);
         totalTextView.setText(String.format(0 + ""));
+
+        Button button_to_bh_calc = (Button) findViewById(R.id.button_to_bh_calc);
+        Button button_to_recommendations = (Button) findViewById(R.id.button_to_recommendations);
+
+        button_to_bh_calc.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openCaloriesCalc();
+            }
+        });
+
+        button_to_recommendations.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openRecommendation();
+            }
+        });
+
+
+
 
 // setting TextWatchers for both weight and height fields
         EditText weightEditText =
@@ -109,20 +129,15 @@ public class MainActivity extends AppCompatActivity {
                 CharSequence s, int start, int count, int after) {
         }
     };
+
+
+    public void openCaloriesCalc(){
+        Intent intent = new Intent(this, CaloriesCalc.class);
+        startActivity(intent);
+    }
+
+    public void openRecommendation(){
+        Intent intent = new Intent(this, Recommendations.class);
+        startActivity(intent);
+    }
 }
-
-
-/*************************************************************************
- * (C) Copyright 1992-2016 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
