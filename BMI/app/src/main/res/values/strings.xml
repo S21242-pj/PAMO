@@ -19,4 +19,18 @@
    <string name="enter_age">Enter your age </string>
    <string name="Energy_Burn">Energy Burn</string>
    <string name="recipe_title">Hiszpańskie Magdalenki</string>
+
+
+   <string name="correct_text">Correct!</string>
+   <string name="incorrect_text">InCorrect!</string>
+   <string name="first_score_text">Correct!</string>
+   <string name="correct_toast_message">Correct!</string>
+   <string name="incorrect_toast_message">InCorrect!</string>
+   <string name="q1"> Czy cukier jest zdrowy??</string>
+   <string name="q2"> Czy sport to zdrowie??</string>
+   <string name="q3"> Czy jedzenie warzyw jest niezdrowe??</string>
+   <string name="q4"> Energetyki są zdrowe?? </string>
+   <string name="q5"> Jedzenie bez umiaru jest zdrowe??</string>
+   <string name="q6"> Czy dieta to sposob odzywiania??</string>
+
 </resources>

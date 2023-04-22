@@ -37,6 +37,23 @@ public class MainActivity extends AppCompatActivity {
 
         Button button_to_bh_calc = (Button) findViewById(R.id.button_to_bh_calc);
         Button button_to_recommendations = (Button) findViewById(R.id.button_to_recommendations);
+        Button button_to_diagram = (Button) findViewById(R.id.button_to_diagram);
+        Button button_to_quiz = (Button) findViewById(R.id.button_to_quiz);
+
+
+
+        button_to_quiz.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openQuiz();
+            }
+        });
+        button_to_diagram.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                openDiagram();
+            }
+        });
 
         button_to_bh_calc.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -136,8 +153,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openQuiz(){
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
+    }
+
     public void openRecommendation(){
         Intent intent = new Intent(this, Recommendations.class);
+        startActivity(intent);
+    }
+
+    public void openDiagram(){
+        Intent intent = new Intent(this, Diagram.class);
         startActivity(intent);
     }
 }
