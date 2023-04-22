@@ -14,6 +14,7 @@
 
 ### LAB 3
 1. W katalogu BMI znajduję się ćwiczenie nr 3
+
 ![image](https://user-images.githubusercontent.com/56222962/233803747-2ad1c54e-b8cd-49de-b858-cb44d44d2c33.png)
 ![image](https://user-images.githubusercontent.com/56222962/233803751-ee0775c7-80b4-4de8-8daf-78a4565fa73e.png)
 ![image](https://user-images.githubusercontent.com/56222962/233803753-29a53f13-3186-4375-872e-7cbb819b4db2.png)
