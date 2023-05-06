@@ -33,19 +33,23 @@ class Quiz : AppCompatActivity() {
         mTxtQuestion = findViewById(R.id.txtQuestion)
         val q1 = questionCollection[mQuestionIndex]
         mQuizQuestion = q1.getmQuestion()
-        mTxtQuestion.setText(mQuizQuestion)
+        mTxtQuestion?.run { setText(mQuizQuestion) }
         mProgressBar = findViewById(R.id.quizPB)
         mQuizstatsTextView = findViewById(R.id.txtQuizStats)
         btnT = findViewById(R.id.btnTrue)
-        btnT.setOnClickListener(View.OnClickListener {
-            evaluateUserAnswer(true)
-            changeQuestionOnButtonClick()
-        })
+        btnT?.run {
+            setOnClickListener(View.OnClickListener {
+                evaluateUserAnswer(true)
+                changeQuestionOnButtonClick()
+            })
+        }
         btnF = findViewById(R.id.btnFalse)
-        btnF.setOnClickListener(View.OnClickListener {
-            evaluateUserAnswer(false)
-            changeQuestionOnButtonClick()
-        })
+        btnF?.run {
+            setOnClickListener(View.OnClickListener {
+                evaluateUserAnswer(false)
+                changeQuestionOnButtonClick()
+            })
+        }
     }
 
     private fun changeQuestionOnButtonClick() {
